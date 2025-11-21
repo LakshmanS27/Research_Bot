@@ -1,12 +1,12 @@
 
-# 🧠 arXiv Computer Science Chatbot
+# arXiv Computer Science Chatbot
 
 This project builds a **research chatbot** for arXiv Computer Science papers.  
 It allows you to search, retrieve, and summarize relevant papers using SBERT embeddings, FAISS vector search, and Streamlit UI.
 
 ---
 
-## 🚀 Features
+## Features
 
 ✅ Download and preprocess the arXiv metadata dataset  
 ✅ Filter for Computer Science papers  
@@ -18,18 +18,18 @@ It allows you to search, retrieve, and summarize relevant papers using SBERT emb
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - Source: [arXiv Metadata on Kaggle](https://www.kaggle.com/datasets/Cornell-University/arxiv)
 - File: `arxiv-metadata-oai-snapshot.json`
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 Run these commands step by step in **Google Colab**.
 
-### 🔧 Install dependencies
+### Install dependencies
 ```bash
 !pip install pandas tqdm
 !pip install sentence-transformers faiss-cpu
@@ -38,7 +38,7 @@ Run these commands step by step in **Google Colab**.
 !pip install kaggle
 ```
 
-### 📄 Save dependencies
+### Save dependencies
 ```bash
 !pip freeze > requirements.txt
 ```
@@ -51,7 +51,7 @@ files.download("requirements.txt")
 
 ---
 
-## 🔑 Kaggle API Setup
+## Kaggle API Setup
 
 1️⃣ Download your `kaggle.json` from [Kaggle API](https://www.kaggle.com/settings/account)  
 2️⃣ Upload it:
@@ -69,7 +69,7 @@ files.upload()
 
 ---
 
-## 📥 Download Dataset
+## Download Dataset
 
 ```bash
 !kaggle datasets download -d Cornell-University/arxiv
@@ -78,7 +78,7 @@ files.upload()
 
 ---
 
-## 🧹 Preprocess Data
+## Preprocess Data
 
 - Parse JSON
 - Filter Computer Science papers
@@ -87,7 +87,7 @@ files.upload()
 
 ---
 
-## 🔗 Build Vector Store
+## Build Vector Store
 
 - Create embeddings with `all-MiniLM-L6-v2`
 - Build FAISS index
@@ -95,9 +95,9 @@ files.upload()
 
 ---
 
-## 💬 Run the Chatbot
+## Run the Chatbot
 
-### 🌟 Local setup with Streamlit & ngrok
+### Local setup with Streamlit & ngrok
 
 1️⃣ Kill existing Streamlit processes (optional)
 ```bash
@@ -131,7 +131,7 @@ thread.start()
 
 ---
 
-## 📜 File Structure
+## File Structure
 
 ```
 .
@@ -145,7 +145,7 @@ thread.start()
 
 ---
 
-## 👨‍💻 Streamlit App (`main.py`)
+## Streamlit App (`main.py`)
 
 The `main.py` contains:
 - Query input box
@@ -154,7 +154,7 @@ The `main.py` contains:
 
 ---
 
-## 📦 Notes
+## Notes
 
 - SBERT model: `all-MiniLM-L6-v2`
 - Summarizer: `sshleifer/distilbart-cnn-12-6`
@@ -162,13 +162,13 @@ The `main.py` contains:
 
 ---
 
-## 📄 License
+## License
 
 This project is open-sourced under MIT License.
 
 ---
 
-## ✨ Credits
+## Credits
 
 - [Sentence Transformers](https://www.sbert.net/)
 - [FAISS](https://faiss.ai/)
@@ -177,4 +177,4 @@ This project is open-sourced under MIT License.
 
 ---
 
-Happy Researching! 🌟
+Happy Researching!
